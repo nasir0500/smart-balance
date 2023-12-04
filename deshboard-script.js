@@ -1,9 +1,6 @@
-let dipositBtn = document.querySelector("#diposit-btn");
-let withdrawBtn = document.querySelector("#withdraw-btn");
-let dipositAmount = document.querySelector("#diposit-amount");
-let withdrawAmount = document.querySelector("#withdraw-amount");
-let currentAmount = document.querySelector("#current-amount");
+let dipositBtn = document.querySelector("#diposit-btn"), withdrawBtn = document.querySelector("#withdraw-btn"), dipositAmount = document.querySelector("#diposit-amount"), withdrawAmount = document.querySelector("#withdraw-amount"), currentAmount = document.querySelector("#current-amount");
 
+/*===== Diposit Iteams =====*/
 dipositBtn.addEventListener("click", ()=>{
     let previousDiposit = Number(dipositAmount.innerText);
     let dipositValue = Number(document.querySelector("#diposit-value").value);
@@ -14,10 +11,11 @@ dipositBtn.addEventListener("click", ()=>{
         currentAmount.innerHTML = previousAmount + dipositValue;
     }
     else{
-        alert("Invalid Diposit Amount")
+        alert("Invalid Diposit Amount");
     }
 });
 
+/*===== Withdraw Iteams =====*/
 withdrawBtn.addEventListener("click", ()=>{
     let previousWithdraw = Number(withdrawAmount.innerText);
     let withdrawValue = Number(document.querySelector("#withdraw-value").value);
