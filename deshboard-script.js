@@ -1,6 +1,6 @@
 let dipositBtn = document.querySelector("#diposit-btn"), withdrawBtn = document.querySelector("#withdraw-btn"), dipositAmount = document.querySelector("#diposit-amount"), withdrawAmount = document.querySelector("#withdraw-amount"), currentAmount = document.querySelector("#current-amount");
 
-/*===== Diposit Iteams =====*/
+/*========================== Diposit Iteams ============================*/
 dipositBtn.addEventListener("click", ()=>{
     let previousDiposit = Number(dipositAmount.innerText);
     let dipositValue = Number(document.querySelector("#diposit-value").value);
@@ -15,7 +15,7 @@ dipositBtn.addEventListener("click", ()=>{
     }
 });
 
-/*===== Withdraw Iteams =====*/
+/*=========================== Withdraw Iteams ============================*/
 withdrawBtn.addEventListener("click", ()=>{
     let previousWithdraw = Number(withdrawAmount.innerText);
     let withdrawValue = Number(document.querySelector("#withdraw-value").value);
